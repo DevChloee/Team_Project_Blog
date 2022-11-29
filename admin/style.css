@@ -1,0 +1,12 @@
+.form{
+	text-align: center;
+	max-width: 300px;
+	margin: auto;
+	margin-top: 100px;
+	background-color: #c5d0e0;
+}
+
+.form-control{
+	width: 250px;
+	margin: auto;
+}
