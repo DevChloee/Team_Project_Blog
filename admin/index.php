@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+  session_start();
+  include("db.php");
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -43,7 +47,7 @@
   
 
   //check if button is clicked and inputs are set
-  if(isset($_POST["login"]) && isser($_POST["loginEmail"]) && isset($_POST["loginPassword"])){
+  if(isset($_POST["login"]) && isset($_POST["loginEmail"]) && isset($_POST["loginPassword"])){
 
       //assign values to variables
     $email = $_POST["loginEmail"];
