@@ -60,17 +60,23 @@
     if($email == "" || $pw == ""){
       //show warning
       echo "Please fill all the area. There is a blank";
-    } else {
-      //check if user exist
-      $sql = "SELECT * FROM users WHERE email = '".$email."' AND password = '".$pw."' ";
-      $result = mysqli_query($conn, $sql);
-      if(mysqli_num_rows($result)>0){
-              $_SESSION["user"]=$email;
-              header("Location: post.php");
-              echo "success";
+      }else{
+          
+          if($email == "chloe@naver.com" && $pw == 123){
+            $_SESSION["admin"]="chloe";
+            header("Location: post.php");
+            //check if user exist
             }else{
-              echo "User not found";
+                $sql = "SELECT * FROM users WHERE email = '".$email."' AND password = '".$pw."' ";
+                $result = mysqli_query($conn, $sql);
+                    if(mysqli_num_rows($result)>0){
+                      $_SESSION["user"]="guest";
+                      header("Location: ../allusers/post.php");
+                      echo "success";
+                      }else{
+                          echo "User not found";
+              }
             }
     }
-  }
+};
 ?>

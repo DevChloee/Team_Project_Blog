@@ -1,8 +1,6 @@
 <?php session_start(); 
 include("../db.php");
-if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
-if(isset($_GET["success"])){
-}
+if(isset($_SESSION["admin"]) && $_SESSION["user"]="guest"){
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,7 +14,7 @@ if(isset($_GET["success"])){
 
     <link rel="stylesheet" type="text/css" href="adminstyle.css">
 
-    <title>My Blog Admin</title>
+    <title>Guest page</title>
   </head>
   <body>
     <!--MENU-->
@@ -37,17 +35,22 @@ if(isset($_GET["success"])){
         </div>
       </nav>
     <div class="container">
-      <form>
-        <div class="form-group">
-            <label>Title</label>
-            <input type="text" class="form-control" name="title">
-        </div>
-        <div class="form-group">
-            <label>Content</label>
-            <textarea class="form-control" rows="3" name="content"></textarea>
-        </div>
-        <input type="submit" class="btn btn-primary" name="submit" value="Publish">
-      </form>
+        <?php
+              $sql = "SELECT * FROM posts";
+              $result = mysqli_query($conn, $sql);
+
+              if(mysqli_num_rows($result)>0){
+                while($row = mysqli_fetch_assoc($result)){
+                  echo "<br>";
+                  echo "<div class='post'>";
+                  echo "<h4 class='title'>".$row["title"]."</h4><hr>
+                        <p class='content'>".$row["content"]."</p>";
+                        ?>
+                        <?php
+                  echo "</div>";
+                }
+              }
+          ?>
 
     </div>
 
@@ -57,25 +60,18 @@ if(isset($_GET["success"])){
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-
 <?php
-if(isset($_GET["submit"])){
-  $title = $_GET["title"];
-  $content = $_GET["content"];
-  if($title == "" && $content == ""){
-    echo "You didn't write anything";
-  }else{
-    $sql = "INSERT INTO posts (title, content) VALUES ('".$title."', '".$content."')";
+  if(isset($_GET["delete"])){
+    $delete = $_GET["delete"];
+    $sql = "DELETE FROM posts WHERE id = '".$delete."' ";
     if(!mysqli_query($conn, $sql)){
-      echo "Something went wrong";
+      echo "There was a problem deleting the post";
     }else{
-      header("Location: new.php?success");
+      header("Location: post.php");
     }
-  }
   }
 }else{
   header("Location: index.php");
 }
-
-
 ?>
+

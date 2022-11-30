@@ -65,21 +65,27 @@
         //show warning
         echo "Pleas fill all the areas";
         } else {
-            //check if passwords are matching
-            if($pw == $pw2){
-              //do the insertion 
-              $sql = "INSERT INTO users (email, password) VALUES 
-              ('".$email."', '".$pw."')";
-              //check if record successful
-              if(mysqli_query($conn, $sql)){
-                $_SESSION["user"] = $email;
-                header("Location: post.php");
-              }else {
-                echo "Error : " . $sql . "<br>" . mysqli_error($conn);
-              }
+
+            if($email == "chloe@naver.com"){
+                echo "It's administrator's id. You can't use this id.";
             }else{
-              //warn user passwords don't match
-              echo "Passwords don't match";
+                    //check if passwords are matching
+                    if($pw == $pw2){
+                      //do the insertion 
+                      $sql = "INSERT INTO users (email, password) VALUES 
+                      ('".$email."', '".$pw."')";
+                      //check if record successful
+                      if(mysqli_query($conn, $sql)){
+                        $_SESSION["user"]="guest";
+                        header("Location: ../allusers/post.php");
+                      }else {
+                        echo "Error : " . $sql . "<br>" . mysqli_error($conn);
+                      }
+                    }else{
+                      //warn user passwords don't match
+                      echo "Passwords don't match";
+                    }
+
             }
         }
   }

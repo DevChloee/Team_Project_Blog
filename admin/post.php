@@ -1,6 +1,6 @@
 <?php session_start(); 
 include("../db.php");
-if(isset($_SESSION["admin"]) && $_SESSION["admin"] == "chloe"){
+if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 ?>
 <!doctype html>
 <html lang="en">
