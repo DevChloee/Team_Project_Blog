@@ -14,25 +14,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--My css file-->
-    <link rel="stylesheet" type="text/css" href="adminstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <title>My Blog Admin</title>
   </head>
   <body>
     <div class="container">
-      <div class="admin-login">
-          <form class="form" method="post">
+      <div id="login-form-wrap" class="admin-login" >
+          <h2>Login</h2>
+          <form  id="login-form" class="form" method="post">
                 <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" class="form-control" name="loginEmail" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" name="loginEmail" placeholder="Email Address" aria-describedby="emailHelp">
                 </div>
                 <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" class="form-control" name="loginPassword">
+                    <input type="password" class="form-control" name="loginPassword" placeholder="Password" >
                 </div>
-                <a href="signup.php">Don't you have an account?</a><br>
-                <button name="login" type="submit" class="btn btn-primary">LOGIN</button>
-          </form>
+                <div class="form-group">
+                    <button name="login" type="submit" class="btn btn-primary">LOGIN</button>
+                </div>
+           </form>     
+                <div id="create-account-wrap">
+                    <p class="form-group">Not a member? <a href="signup.php">Create Account</a></p>
+                </div>
       </div>
     </div>
 
@@ -64,6 +67,7 @@
       if(mysqli_num_rows($result)>0){
               $_SESSION["user"]=$email;
               header("Location: post.php");
+              echo "success";
             }else{
               echo "User not found";
             }
