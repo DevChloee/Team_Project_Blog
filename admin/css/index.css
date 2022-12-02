@@ -147,3 +147,17 @@ button[type="submit"]:hover {
   padding: 10px 0;
   border-radius: 0 0 4px 4px;
 }
+
+.navbar-collapse{
+/*  border: solid white;*/
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1% 0 1%;
+
+}
+.logout{
+/*  display: block;*/
+/*  border: solid white;*/
+  color: white;
+
+}

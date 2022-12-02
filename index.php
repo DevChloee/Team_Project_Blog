@@ -33,7 +33,7 @@ include("db.php");
                 <a class="nav-link" href="index.php">Posts<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="admin/index.php">About me</a>
+                <a class="nav-link" href="admin/index.php">Login</a>
               </li>
           </ul>
         </div>

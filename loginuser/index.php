@@ -1,6 +1,8 @@
 <?php session_start(); 
 include("../db.php");
-if(isset($_SESSION["admin"]) && $_SESSION["user"]="guest"){
+if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
+    if(isset($_GET["success"])){
+    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,7 +14,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["user"]="guest"){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="adminstyle.css">
+    <link rel="stylesheet" type="text/css" href="loginUserStyle.css">
 
     <title>Guest page</title>
   </head>
@@ -26,12 +28,19 @@ if(isset($_SESSION["admin"]) && $_SESSION["user"]="guest"){
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="post.php">Posts<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Posts<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="new.php">New</a>
+                <a class="nav-link" href="new.php"></a>
               </li>
           </ul>
+          <a href="?logout" class="logout">Logout</a>
+            <?php
+              if(isset($_GET["logout"])){
+                session_destroy();
+                header("Location: ../index.php");
+              }
+            ?>
         </div>
       </nav>
     <div class="container">
@@ -71,7 +80,6 @@ if(isset($_SESSION["admin"]) && $_SESSION["user"]="guest"){
     }
   }
 }else{
-  header("Location: index.php");
+  header("Location: ../index.php");
 }
 ?>
-

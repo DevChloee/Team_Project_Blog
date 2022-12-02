@@ -19,7 +19,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
   <body>
     <!--MENU-->
       <nav class="navbar navbar-expand-lg navbar-dark mynav">
-        <a class="navbar-brand" href="index.php"><img width="100px" src="../img/universe.jpg"></a>
+        <a class="navbar-brand" href="post.php"><img width="100px" src="../img/universe.jpg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,6 +32,13 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
                 <a class="nav-link" href="new.php">New</a>
               </li>
           </ul>
+          <a href="?logout" class="logout">Logout</a>
+            <?php
+              if(isset($_GET["logout"])){
+                session_destroy();
+                header("Location: ../index.php");
+              }
+            ?>
         </div>
       </nav>
     <div class="container">

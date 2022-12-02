@@ -1,8 +1,8 @@
 <?php session_start(); 
 include("../db.php");
 if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
-if(isset($_GET["success"])){
-}
+    if(isset($_GET["success"])){
+    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -15,13 +15,15 @@ if(isset($_GET["success"])){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="adminstyle.css">
+    <link rel="stylesheet" type="text/css" href="new.css">
 
     <title>My Blog Admin</title>
+
   </head>
   <body>
     <!--MENU-->
       <nav class="navbar navbar-expand-lg navbar-dark mynav">
-        <a class="navbar-brand" href="index.php"><img width="100px" src="../img/universe.jpg"></a>
+        <a class="navbar-brand" href="post.php"><img width="100px" src="../img/universe.jpg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,6 +36,13 @@ if(isset($_GET["success"])){
                 <a class="nav-link" href="new.php">New</a>
               </li>
           </ul>
+          <a href="?logout">Logout</a>
+            <?php
+              if(isset($_GET["logout"])){
+                session_destroy();
+                header("Location: ../index.php");
+              }
+            ?>
         </div>
       </nav>
     <div class="container">

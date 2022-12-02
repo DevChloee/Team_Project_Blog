@@ -71,7 +71,7 @@
                 $result = mysqli_query($conn, $sql);
                     if(mysqli_num_rows($result)>0){
                       $_SESSION["user"]="guest";
-                      header("Location: ../allusers/post.php");
+                      header("Location: ../loginuser/index.php");
                       echo "success";
                       }else{
                           echo "User not found";

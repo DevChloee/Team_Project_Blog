@@ -77,7 +77,7 @@
                       //check if record successful
                       if(mysqli_query($conn, $sql)){
                         $_SESSION["user"]="guest";
-                        header("Location: ../allusers/post.php");
+                        header("Location: ../loginuser/index.php");
                       }else {
                         echo "Error : " . $sql . "<br>" . mysqli_error($conn);
                       }
