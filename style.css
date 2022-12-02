@@ -21,6 +21,11 @@
 	box-shadow:         6px 8px 15px 4px rgba(230, 200, 92, 0.75);
 	padding:10px;
 }
+
+.posttitle{
+
+}
+
 .navbar-collapse{
 /*	border: solid white;*/
 	display: flex;

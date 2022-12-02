@@ -36,7 +36,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
                 <a class="nav-link" href="new.php">New</a>
               </li>
           </ul>
-          <a href="?logout">Logout</a>
+          <a href="?logout" class="logout">Logout</a>
             <?php
               if(isset($_GET["logout"])){
                 session_destroy();

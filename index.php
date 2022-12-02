@@ -62,12 +62,11 @@ include("db.php");
                 <?php
                   $sql = "SELECT * FROM posts";
                   $result = mysqli_query($conn, $sql);
-                  echo "<br>";
-                  echo "<div class='post'>";
 
                   if(mysqli_num_rows($result)>0){
                     while($row = mysqli_fetch_assoc($result)){
-                      
+                      echo "<br>";
+                      echo "<div class='posttitle'>";
                       echo "<h4 class='title'>".$row["title"]."</h4><hr>";
                       echo "</div>";
                     }
