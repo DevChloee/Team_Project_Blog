@@ -59,7 +59,7 @@
     //check if every field is filled
     if($email == "" || $pw == ""){
       //show warning
-      echo "Please fill all the area. There is a blank";
+      echo '<script>alert("Plese fill all the areas. There is a blank.")</script>';
       }else{
           
           if($email == "chloe@naver.com" && $pw == 123){
@@ -74,7 +74,7 @@
                       header("Location: ../loginuser/index.php");
                       echo "success";
                       }else{
-                          echo "User not found";
+                          echo '<script>alert("User can not be found.")</script>';
               }
             }
     }

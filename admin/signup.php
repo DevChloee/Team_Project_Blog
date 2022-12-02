@@ -67,11 +67,11 @@
         //check if every field is filled
         if($email == "" || $pw == "" || $pw2 == "") {
         //show warning
-        echo "Pleas fill all the areas";
+        echo '<script>alert("Plese fill all the areas. There is a blank")</script>';
         } else {
 
             if($email == "chloe@naver.com"){
-                echo "It's administrator's id. You can't use this id.";
+                echo '<script>alert("Its administrator id. Do not use this id")</script>';
             }else{
                     //check if passwords are matching
                     if($pw == $pw2){
@@ -87,7 +87,7 @@
                       }
                     }else{
                       //warn user passwords don't match
-                      echo "Passwords don't match";
+                      echo '<script>alert("User passsword not matched")</script>';
                     }
 
             }
