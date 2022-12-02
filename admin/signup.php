@@ -41,7 +41,8 @@
                 </div>
             </form>
              <div id="create-account-wrap">
-                    <p class="form-group">Are you already a member? <a href="index.php" class="loginLetter">Login</a></p>
+                    <p class="form-group form-group-member">Are you already a member? <a href="index.php" class="loginLetter">Login</a></p>
+                    <p class="form-group form-group-member">Wanna go to main page?<a href="../index.php" class="loginLetter">  Main Page</a></p>
                 </div>
         </div>
     </div>

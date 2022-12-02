@@ -133,3 +133,10 @@ button[type="submit"]:hover {
 .loginLetter{
   color: #329dd5;
 }
+
+
+#create-account-wrap .form-group-member:first-child{
+/*  border: solid black;*/
+  margin-bottom: 0;
+
+}

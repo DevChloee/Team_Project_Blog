@@ -160,3 +160,10 @@ button[type="submit"]:hover {
   color: white;
 
 }
+
+
+#create-account-wrap .form-group-member:first-child{
+/*  border: solid black;*/
+  margin-bottom: 0;
+
+}

@@ -34,7 +34,8 @@
                 </div>
            </form>     
                 <div id="create-account-wrap">
-                    <p class="form-group">Not a member? <a href="signup.php">Create Account</a></p>
+                    <p class="form-group form-group-member">Not a member? <a href="signup.php">Create Account</a></p>
+                    <p class="form-group form-group-member">Wanna go to main page?<a href="../index.php">  Main Page</a></p>
                 </div>
       </div>
     </div>
