@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--My css file-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
 
     <title>Hello, world!</title>
   </head>
@@ -23,23 +23,27 @@
 
     <div class="container">
         <!--Signup Form-->
-        <form class="form" method="post">
-            <div class="form-group">
-              <label>Email address</label>
-              <input type="email" class="form-control" name="signupEmail" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label>Password</label>
-              <input type="password" class="form-control" name="signupPassword">
-            </div>
-            <div class="form-group">
-              <label>Password Again</label>
-              <input type="password" class="form-control" name="signupPassword2">
-            </div>
-            <a href="index.php">Are you already a member?</a><br>
-            <button name="signup" type="submit" class="btn btn-primary">Signup</button>
-      </form>
+        <div id="signup-form-wrap" class="signup">
+              <h2>Sign up</h2>
+              <form class="signup-form" method="post">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="signupEmail" aria-describedby="emailHelp" placeholder="Email Address">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" name="signupPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" name="signupPassword2" placeholder="Password Again">
+                </div>
+                <div class="form-group">
+                  <button name="signup" type="submit" class="btn btn-primary">Signup</button>
+                </div>
+            </form>
+             <div id="create-account-wrap">
+                    <p class="form-group">Are you already a member? <a href="index.php" class="loginLetter">Login</a></p>
+                </div>
+        </div>
     </div>
 
    <!--Bootstrap JS-->

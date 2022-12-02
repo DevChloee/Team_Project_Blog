@@ -33,9 +33,10 @@ include("db.php");
                 <a class="nav-link" href="index.php">Posts<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="admin/index.php">Login</a>
+                <a class="nav-link" href="index.php">Not yet made</a>
               </li>
           </ul>
+          <a href="admin/index.php" class="login">Login</a>
         </div>
       </nav>
       <!--CONTENT-->

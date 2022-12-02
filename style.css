@@ -21,3 +21,20 @@
 	box-shadow:         6px 8px 15px 4px rgba(230, 200, 92, 0.75);
 	padding:10px;
 }
+.navbar-collapse{
+/*	border: solid white;*/
+	display: flex;
+	justify-content: space-between;
+	margin: 0 2% 0 1%;
+
+}
+
+.login{
+/*	display: block;*/
+/*	border: solid white;*/
+	color: white;
+}
+
+@media all and (max-width: 992px){
+	.navbar-collapse{display:block;}
+}
