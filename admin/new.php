@@ -30,7 +30,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
         <nav class="navbar navbar-expand-lg">
 
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>My BLOG<em>.</em></h2></a>
+          <a class="navbar-brand" href="index.php"><h2>My BLOG<em>.</em></h2></a>
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -56,7 +56,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="contact.php">Contact Us</a>
               </li>
 
               <li class="nav-item">
@@ -113,13 +113,13 @@ if(isset($_GET["submit"])){
             if(!mysqli_query($conn, $sql)){
              echo "Something went wrong";
                 }else{
-               // header("Location: new.php?success");
+               header("Location: index.php?success");
                 $msg = "Posted Successfully!";
             }
         }
     }
 }else{
-  header("Location: index.php");
+  header("Location:  index.php");
 }
 
 

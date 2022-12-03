@@ -14,7 +14,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
      <link rel="stylesheet" type="text/css" href="NewAndPost.css">
-    <link rel="stylesheet" type="text/css" href="../index.css">
+     <link rel="stylesheet" type="text/css" href="../index.css">
 
     <title>My Blog Admin</title>
   </head>
@@ -50,7 +50,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="contact.php">Contact Us</a>
               </li>
 
               <li class="nav-item">
