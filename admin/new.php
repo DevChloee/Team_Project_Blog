@@ -3,6 +3,7 @@ include("../db.php");
 if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
     if(isset($_GET["success"])){
     }
+  
 ?>
 <!doctype html>
 <html lang="en">
@@ -55,7 +56,9 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
             <label>Content</label>
             <textarea class="form-control" rows="3" name="content"></textarea>
         </div>
-        <input type="submit" class="btn btn-primary" name="submit" value="Publish">
+        <div class="form-group">
+          <input type="submit" class="btn btn-primary" name="submit" value="Publish">
+        </div>
       </form>
 
     </div>
@@ -68,20 +71,22 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 </html>
 
 <?php
+
 if(isset($_GET["submit"])){
   $title = $_GET["title"];
   $content = $_GET["content"];
-  if($title == "" && $content == ""){
-    echo "You didn't write anything";
-  }else{
-    $sql = "INSERT INTO posts (title, content) VALUES ('".$title."', '".$content."')";
-    if(!mysqli_query($conn, $sql)){
-      echo "Something went wrong";
-    }else{
-      header("Location: new.php?success");
+    if($title == "" && $content == ""){
+        echo "You didn't write anything";
+        }else{
+            $sql = "INSERT INTO posts (title, content) VALUES ('".$title."', '".$content."')";
+            if(!mysqli_query($conn, $sql)){
+             echo "Something went wrong";
+                }else{
+               // header("Location: new.php?success");
+                $msg = "Posted Successfully!";
+            }
+        }
     }
-  }
-  }
 }else{
   header("Location: index.php");
 }
