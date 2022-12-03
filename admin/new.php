@@ -5,6 +5,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
     }
   
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,38 +16,68 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="adminstyle.css">
-    <link rel="stylesheet" type="text/css" href="css/new.css">
+    <link rel="stylesheet" type="text/css" href="NewAndPost.css">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+
 
     <title>My Blog Admin</title>
 
   </head>
-  <body>
-    <!--MENU-->
-      <nav class="navbar navbar-expand-lg navbar-dark mynav">
-        <a class="navbar-brand" href="post.php"><img width="100px" src="../img/universe.jpg"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+  <body class="newpage_body">
+
+    <!-- Header -->
+      <header class="headertop">
+        <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>My BLOG<em>.</em></h2></a>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
               <li class="nav-item active">
-                <a class="nav-link" href="post.php">Posts<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="">Home
+                  <span class="sr-only">(current)</span>
+                </a>
               </li>
-              <li class="nav-item active">
+
+              <li class="nav-item">
+                <a class="nav-link" href="">About Us</a>
+              </li>
+
+               <li class="nav-item">
+                <a class="nav-link" href="deletion.php">Delete</a>
+              </li>
+
+
+              <li class="nav-item">
                 <a class="nav-link" href="new.php">New</a>
               </li>
-          </ul>
-          <a href="?logout" class="logout">Logout</a>
-            <?php
-              if(isset($_GET["logout"])){
-                session_destroy();
-                header("Location: ../index.php");
-              }
-            ?>
-        </div>
-      </nav>
-    <div class="container">
+
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="?logout" class="logout nav-link">Logout</a>
+                <?php
+                  if(isset($_GET["logout"])){
+                    session_destroy();
+                    header("Location: ../index.php");
+                  }
+                ?>
+              </li>
+
+            </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+    <!--main contents-->
+    <div id="new-form-wrap" class="container new_wrap">
+      <h2 class="newpost_title"> New post! </h2>
       <form>
         <div class="form-group">
             <label>Title</label>

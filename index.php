@@ -21,39 +21,39 @@ include("db.php");
 
         <title>My Beautiful Blog</title>
     </head>
-  <body>
+  <body id="page-container ">
 
      <!-- Header -->
       <header class="headertop">
         <nav class="navbar navbar-expand-lg">
 
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>My BLOG<em>.</em></h2></a>
+          <a class="navbar-brand" href=""><h2>My BLOG<em>.</em></h2></a>
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
 
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="admin/index.php">About Us</a>
+                <a class="nav-link" href="admin/login.php">About Us</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="admin/index.php">Posts</a>
+                <a class="nav-link" href="admin/login.php">Posts</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="admin/index.php">Contact Us</a>
+                <a class="nav-link" href="admin/login.php">Contact Us</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="admin/index.php">Login</a>
+                <a class="nav-link" href="admin/login.php">Login</a>
               </li>
 
             </ul>
@@ -64,6 +64,7 @@ include("db.php");
 
 
       <!--CONTENT-->
+    <div>
       <div class="container mainpart">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -97,7 +98,7 @@ include("db.php");
                   }
                   echo "</div>";
                 ?>
-            </div>
+              </div>
         </div>
       </div>
 

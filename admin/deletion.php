@@ -1,7 +1,9 @@
-<?php session_start(); 
-include("../db.php");
-if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
+<?php 
+  session_start(); 
+  include("../db.php");
+  if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,36 +14,63 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="adminstyle.css">
+     <link rel="stylesheet" type="text/css" href="NewAndPost.css">
+     <link rel="stylesheet" type="text/css" href="../index.css">
 
     <title>My Blog Admin</title>
   </head>
   <body>
-    <!--MENU-->
-      <nav class="navbar navbar-expand-lg navbar-dark mynav">
-        <a class="navbar-brand" href="post.php"><img width="100px" src="../img/universe.jpg"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+
+    <!-- Header -->
+      <header class="headertop">
+        <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+          <a class="navbar-brand" href="index.php"><h2>My BLOG<em>.</em></h2></a>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
               <li class="nav-item active">
-                <a class="nav-link" href="post.php">Posts<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Home
+                  <span class="sr-only">(current)</span>
+                </a>
               </li>
-              <li class="nav-item active">
+
+              <li class="nav-item">
+                <a class="nav-link" href="index.php">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="">Delete</a>
+              </li>
+
+              <li class="nav-item">
                 <a class="nav-link" href="new.php">New</a>
               </li>
-          </ul>
-          <a href="?logout" class="logout">Logout</a>
-            <?php
-              if(isset($_GET["logout"])){
-                session_destroy();
-                header("Location: ../index.php");
-              }
-            ?>
-        </div>
-      </nav>
-    <div class="container">
+
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="?logout" class="logout nav-link">Logout</a>
+                <?php
+                  if(isset($_GET["logout"])){
+                    session_destroy();
+                    header("Location: ../index.php");
+                  }
+                ?>
+              </li>
+
+            </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+   
+   <div class="container">
         <?php
               $sql = "SELECT * FROM posts";
               $result = mysqli_query($conn, $sql);
@@ -54,7 +83,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
                         <p class='content'>".$row["content"]."</p>";
                         ?>
 
-                        <a href="post.php?delete=<?php echo $row["id"]; ?>" class="btn btn-info">Delete</a>
+                        <a href="deletion.php?delete=<?php echo $row["id"]; ?>" class="btn btn-info">Delete</a>
                         <?php
                   echo "</div>";
                 }
@@ -76,11 +105,10 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
     if(!mysqli_query($conn, $sql)){
       echo "There was a problem deleting the post";
     }else{
-      header("Location: post.php");
+      header("Location: index.php");
     }
   }
 }else{
   header("Location: index.php");
 }
 ?>
-

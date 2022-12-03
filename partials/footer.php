@@ -1,5 +1,5 @@
- <footer>
-      <div class="container">
+ 	<footer id="footer" >
+      	<div class="footer-child">
         	<div class="row">
           		<div class="col-lg-12">
 		            <ul class="social-icons">
@@ -10,13 +10,13 @@
 		              <li><a href="#">Dribbble</a></li>
 		            </ul>
           		</div>
-          		<div class="col-lg-12">
+          	<!-- <div class="col-lg-12 bottomfooter">
             		<div class="copyright-text">
               				<p>Copyright 2022 
 
-                 				| Design: <a rel="nofollow" href="#" target="_parent">BLOG COMPANY</a></p>
+                 				| Design: <a href="#" target="_parent">BLOG COMPANY</a></p>
             		</div>
-          		</div>
+          		</div> -->
         	</div>
         </div>
     </footer>

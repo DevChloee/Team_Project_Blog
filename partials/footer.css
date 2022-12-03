@@ -1,6 +1,7 @@
 
 /* Footer */
 
+
 footer {
 /*	position: absolute;*/
 	margin-top: 100px;
@@ -62,3 +63,4 @@ footer p a {
 footer p a:hover {
 	color: #f48840;
 }
+
