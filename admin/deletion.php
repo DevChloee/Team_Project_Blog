@@ -105,10 +105,10 @@
     if(!mysqli_query($conn, $sql)){
       echo "There was a problem deleting the post";
     }else{
-      header("Location: index.php");
+      header("Location: deletion.php");
     }
   }
 }else{
-  header("Location: index.php");
+  header("Location: deletion.php");
 }
 ?>
