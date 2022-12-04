@@ -1,9 +1,44 @@
+#earth {
+  padding-top: 6px;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-shadow: 0 10px 10px 0 rgba(148, 202, 238, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title {
+  text-align: center;
+}
+
+blockquote {
+  padding: 4px;
+  background-color: #d9d7e2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 14pt;
+}
+
+#algonquin {
+  padding-top: 6px;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 #search-position {
   padding-top: 10px;
-  float: right;
-  padding-right: 80px;
-  padding-left: 20px;
-  
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 #search-position h1 {
