@@ -13,6 +13,7 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Comment System Using BS4, PHP & MySQLI</title>
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../partials/footer.css">
 
 	<script src="https://kit.fontawesome.com/607a06b07a.js" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
@@ -33,24 +34,24 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
         <nav class="navbar navbar-expand-lg">
 
         <div class="container">
-          <a class="navbar-brand" href=""><h2>My BLOG<em>.</em></h2></a>
+          <a class="navbar-brand" href="index.php"><h2>My BLOG<em>.</em></h2></a>
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
 
               <li class="nav-item active">
-                <a class="nav-link" href="">Home
+                <a class="nav-link" href="index.php">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">About Us</a>
+                <a class="nav-link" href="aboutus.php">About Us</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">Posts</a>
+                <a class="nav-link" href="index.php">Posts</a>
               </li>
 
               <li class="nav-item">
@@ -120,7 +121,7 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 					</div>
 					<div class="card-footer py-2">
 						<div class="float-right">
-							<a href="action.php?del=<?= $row['id'] ?>" class="text-danger mr-w"
+							<a href="contact.php?del=<?= $row['id'] ?>" class="text-danger mr-w"
 								onclick="return confirm('Do you want to delete this comment?');"
 								title="Delete"><i class="fas fa-trash"></i></a>
 
@@ -134,8 +135,10 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+<?php 
+  include '../partials/footer.php';
+?>
+
 <?php
  	}else{
   header("Location: contact.php");

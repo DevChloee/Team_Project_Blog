@@ -1,6 +1,7 @@
-<?php session_start(); 
-require("../loginuser/action.php");
-if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
+<?php 
+	session_start(); 
+	require("../loginuser/action.php");
+	if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 
 ?>
 
@@ -16,15 +17,8 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 	<script src="https://kit.fontawesome.com/607a06b07a.js" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../partials/footer.css">
 
-	<!-- jQuery library -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script> -->
-
-	<!-- Popper JS -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
-
-	<!-- Latest compiled JavaScript -->
-	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
 </head>
 
 <body class="bg-dark">
@@ -40,13 +34,13 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
             <ul class="navbar-nav ml-auto">
 
               <li class="nav-item active">
-                <a class="nav-link" href="">Home
+                <a class="nav-link" href="index.php">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
+                <a class="nav-link" href="aboutus.php">About Us</a>
               </li>
 
                <li class="nav-item">
@@ -59,7 +53,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="contact.php">Contact Us</a>
               </li>
 
               <li class="nav-item">
@@ -124,7 +118,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 					</div>
 					<div class="card-footer py-2">
 						<div class="float-right">
-							<a href="action.php?del=<?= $row['id'] ?>" class="text-danger mr-w"
+							<a href="contact.php?del=<?= $row['id'] ?>" class="text-danger mr-w"
 								onclick="return confirm('Do you want to delete this comment?');"
 								title="Delete"><i class="fas fa-trash"></i></a>
 
@@ -138,8 +132,10 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+ 
+ 	<?php 
+    include '../partials/footer.php';
+    ?>
 <?php
  	}else{
   header("Location: contact.php");

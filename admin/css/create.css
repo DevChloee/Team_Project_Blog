@@ -1,0 +1,124 @@
+body {
+    background-color: #9f9da7;
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2b3e51;
+  }
+  
+  h2 {
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  #signup-form-wrap {
+    background-color: #fff;
+    width: 25%;
+    margin: 15% auto;
+    transform:translateY(-60px);
+    text-align: center;
+    padding: 40px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0px 30px 50px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-text{
+    font-size: 12px;
+  }
+  
+  .form-group {
+    padding: 0 20px;
+  }
+  
+  input, button {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+  }
+  
+  input{
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    color: #8a8b8e;
+    border:1px solid #c2c0ca;
+    font-style: normal;
+    font-size: 16px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: relative;
+    display: inline-block;
+    background: none;
+  }
+  button[type="submit"] {
+    border: none;
+    display: block;
+    width:80%;
+    margin:15px;
+    height:120%;
+    background-color: #3ca9e2;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+  }
+  button[type="submit"]:hover {
+    background-color: #329dd5;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  #create-account-wrap {
+    background-color: #eeedf1;
+    color: #8a8b8e;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .loginLetter{
+    color: #329dd5;
+  }
+  
+  
+  #create-account-wrap .form-group-member:first-child{
+  /*  border: solid black;*/
+    margin-bottom: 0;
+  
+  }
+  .form-group p{
+    color:red;
+    font-size: 12px;
+    margin:0;
+    padding:0;
+    text-align: left;
+    margin-left:53px;
+  }
+  .invalid{
+    border:1px solid red;
+    color:red;
+    font-size: 12px;
+    border-radius:5px;
+  }
+  .invalid{
+    outline: none;
+    border-radius:5px;
+    border:1px solid red;
+  }

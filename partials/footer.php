@@ -1,27 +1,33 @@
- 	<footer id="footer" >
-      	<div class="footer-child">
-        	<div class="row">
-          		<div class="col-lg-12">
-		            <ul class="social-icons">
-		              <li><a href="#">Facebook</a></li>
-		              <li><a href="#">Twitter</a></li>
-		              <li><a href="#">Youtube</a></li>
-		              <li><a href="#">Linkedin</a></li>
-		              <li><a href="#">Dribbble</a></li>
-		            </ul>
-          		</div>
-          	<!-- <div class="col-lg-12 bottomfooter">
-            		<div class="copyright-text">
-              				<p>Copyright 2022 
-
-                 				| Design: <a href="#" target="_parent">BLOG COMPANY</a></p>
-            		</div>
-          		</div> -->
-        	</div>
-        </div>
-    </footer>
+ 	<footer class="footer">
+    <div class="footerdiv">
+		    <div class="footer_titles">
+		        <p class="bloggersfooter">Bloggers</p>
+		        <p class="social">Social</p>
+		    </div>
+    <hr class="cuteline">
+    <div class="footerinfo">
+		    <div class="peoplefooter">
+		        <p class="peepfoot">Dawon "Chloe" Jun | Jacob Dompierre | Alex Valiquette | Noah Furnival</p>
+		    </div>
+    <!-- TO DO: MAKE EMAILS LINK-->
+    		<div class="emailsfooter">
+		        <a href="mailto:Chloe@gmail.com" class="peepemail">Chloe.jun.77@gmail.com | </a>
+		        <a href="mailto:Jacob@gmail.com" class="peepemail">Jacob@gmail.com | </a>
+		        <a href="mailto:Alex@gmail.com" class="peepemail">Alex@gmail.com | </a>
+		        <a href="mailto:Noah@gmail.com" class="peepemail">Noah@gmail.com | </a>
+            </div>
+        
+    		</div>
+    </div>
+    </div>
+    
+			<div class="copyright">Copyright 
+				<span style="color:#f48840">2022 COPYRIGHT@</span>
+				 - MyBlog 
+			</div>
+	</div>
+	</div>
+</div>
+</footer>
 </body>
- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  </html>
