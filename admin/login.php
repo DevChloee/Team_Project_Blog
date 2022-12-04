@@ -18,7 +18,7 @@
 
     <title>My Blog Admin</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <div class="container">
       <div id="login-form-wrap" class="admin-login" >
           <h2>Login</h2>

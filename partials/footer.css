@@ -7,6 +7,16 @@
 /*    margin: 0 auto;*/
     text-align: center;
 }
+.footer-contact{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+	color: white;
+	background-color: rgb(32, 35, 46);
+	margin-top: 75px;
+/*    margin: 0 auto;*/
+    text-align: center;
+}
 .footer_titles{
 
     position: relative;
@@ -14,7 +24,9 @@
     font-weight: bolder;
     font-size: 20px;
 }
-
+.copyright{
+    position:relative;
+}
 hr.cuteline {
     height: 5px;
     border-top: 3px double white;

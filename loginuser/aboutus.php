@@ -28,7 +28,7 @@ if (isset($_SESSION["user"]) && $_SESSION["user"] = "guest") {
   <title>About Us</title>
 </head>
 
-<body>
+<body class="bg-dark">
 
   <!-- Header -->
   <header class="headertop">

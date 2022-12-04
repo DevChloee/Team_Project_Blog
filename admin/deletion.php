@@ -20,7 +20,7 @@
 
     <title>My Blog Admin</title>
   </head>
-  <body>
+  <body class="bg-dark">
 
     <!-- Header -->
       <header class="headertop">
@@ -79,12 +79,12 @@
               if(mysqli_num_rows($result)>0){
                 while($row = mysqli_fetch_assoc($result)){
                   echo "<br>";
-                  echo "<div class='post'>";
+                  echo "<div class='post bg-light'>";
                   echo "<h4 class='title'>".$row["title"]."</h4><hr>
                         <p class='content'>".$row["content"]."</p>";
                         ?>
 
-                        <a href="deletion.php?delete=<?php echo $row["id"]; ?>" class="btn btn-info">Delete</a>
+                        <a href="deletion.php?delete=<?php echo $row["id"]; ?>" class="delete-button">Delete</a>
                         <?php
                   echo "</div>";
                 }
