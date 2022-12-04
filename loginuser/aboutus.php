@@ -22,6 +22,7 @@ if (isset($_SESSION["user"]) && $_SESSION["user"] = "guest") {
   <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../index.css">
   <link rel="stylesheet" type="text/css" href="../admin/css/about-us.css">
+  <link rel="stylesheet" type="text/css" href="../partials/footer.css">
   <script src="../js/search.js" defer></script>
 
   <title>About Us</title>
@@ -34,7 +35,7 @@ if (isset($_SESSION["user"]) && $_SESSION["user"] = "guest") {
     <nav class="navbar navbar-expand-lg">
 
       <div class="container">
-        <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="index.php">
           <h2>My BLOG<em>.</em></h2>
         </a>
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +44,7 @@ if (isset($_SESSION["user"]) && $_SESSION["user"] = "guest") {
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item active">
-              <a class="nav-link" href="">Home
+              <a class="nav-link" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -76,7 +77,7 @@ if (isset($_SESSION["user"]) && $_SESSION["user"] = "guest") {
     </nav>
   </header>
   <div class="container">
-    <h1 id="title">About Us</h1>
+    <h1 id="aboutustitle">About Us</h1>
     <blockquote>We are a group of 4 developpers from Algonquin College, who we're tasked with creating a web
       application.
       We choose to make a diary website/forums, we tought it would be place to start for our first web application.
@@ -109,10 +110,9 @@ if (isset($_SESSION["user"]) && $_SESSION["user"] = "guest") {
   </div>
 
 
-
-</body>
-
-</html>
+<?php 
+  include '../partials/footer.php';
+?>
 
 <?php
   if (isset($_GET["delete"])) {

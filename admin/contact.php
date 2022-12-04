@@ -134,8 +134,9 @@
 	</div>
  
  	<?php 
-    include '../partials/footer.php';
-    ?>
+  include '../partials/footer.php';
+	?>
+
 <?php
  	}else{
   header("Location: contact.php");

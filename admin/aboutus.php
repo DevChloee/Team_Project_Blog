@@ -43,7 +43,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] = "chloe") {
           <ul class="navbar-nav ml-auto">
 
             <li class="nav-item active">
-              <a class="nav-link" href="">Home
+              <a class="nav-link" href="index.php">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -81,7 +81,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] = "chloe") {
     </nav>
   </header>
   <div class="container">
-    <h1 id="title">About Us</h1>
+    <h1 id="aboutustitle">About Us</h1>
     <blockquote>We are a group of 4 developpers from Algonquin College, who we're tasked with creating a web
       application.
       We choose to make a diary website/forums, we tought it would be place to start for our first web application.
