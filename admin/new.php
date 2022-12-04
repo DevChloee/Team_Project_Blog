@@ -43,7 +43,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About Us</a>
+                <a class="nav-link" href="aboutus.php">About Us</a>
               </li>
 
                <li class="nav-item">

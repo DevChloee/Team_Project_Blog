@@ -46,7 +46,7 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">About Us</a>
+                <a class="nav-link" href="aboutus.php">About Us</a>
               </li>
 
               <li class="nav-item">
@@ -120,7 +120,7 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 					</div>
 					<div class="card-footer py-2">
 						<div class="float-right">
-							<a href="action.php?del=<?= $row['id'] ?>" class="text-danger mr-w"
+							<a href="contact.php?del=<?= $row['id'] ?>" class="text-danger mr-w"
 								onclick="return confirm('Do you want to delete this comment?');"
 								title="Delete"><i class="fas fa-trash"></i></a>
 
