@@ -27,7 +27,7 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] = "chloe") {
   <title>About Us</title>
 </head>
 
-<body>
+<body class="bg-dark">
 
   <!-- Header -->
   <header class="headertop">
@@ -82,12 +82,12 @@ if (isset($_SESSION["admin"]) && $_SESSION["admin"] = "chloe") {
   </header>
   <div class="container">
     <h1 id="aboutustitle">About Us</h1>
-    <blockquote>We are a group of 4 developpers from Algonquin College, who we're tasked with creating a web
+    <blockquote>We are a group of 4 developers from Algonquin College, who we're tasked with creating a web
       application.
       We choose to make a diary website/forums, we tought it would be place to start for our first web application.
       Since
       we all sue social media but have no clue how it works on the back-end. This was a great opurtunity to have learned more about web development, 
-      aswell as the first real group assignment.</blockquote>
+      as well as the first real group assignment.</blockquote>
     <img id="earth" src="../img/earth.png" alt="earth-from-space">
     <blockquote>
       <p>If you have any questions our problems feel free to use the search fucntion below to search and filter out your

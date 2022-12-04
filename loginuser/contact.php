@@ -30,6 +30,7 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 </head>
  <!-- Header -->
        <!-- Header -->
+	   <body class="bg-dark">
       <header class="headertop">
         <nav class="navbar navbar-expand-lg">
 
@@ -74,14 +75,13 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
         </nav>
       </header>
       
-		<body class="bg-dark">
 			<div class="container">
-				<div class="row justify-content-center mb-2">
+				<div class="row justify-content-center mb-2 comment-wrapper">
 					<div class="col-lg-5 bg-light rounded mt-w">
 						<h4 class="text-center p-2">Write your comment!</h4>
 						<form action="contact.php" method="POST" class="p-2">
 							<input type="hidden" name="id" value="<?= $u_id; ?>">
-							<div class="form-group">
+							<div class="form-group comment-form">
 								<input type="text" name="name" class="form-control rounded-0"
 								placeholder="Enter your name" required value="<?= $u_name; ?>">
 							</div>
@@ -94,8 +94,7 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 									<input type="submit" name="update" class="btn btn-success rounded-0" 
 									value="Update Comment">
 								<?php } else{ ?>
-									<input type="submit" name="submit" class="btn btn-primary
-									rounded-0" value="Post Comment">
+									<input type="submit" name="submit" class="new-button" value="Post Comment">
 								<?php } ?>
 								<h5 class="float-right text-success p-2"><?= $msg; ?></h5>
 							</div>

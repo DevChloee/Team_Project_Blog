@@ -112,9 +112,37 @@ header .navbar {
 	background-color: #013954;
 }
 
-
-
-
+h1{
+	color:coral;
+}
+.delete-button{
+	background-color: coral;
+	padding:7px;
+	border:none;
+	border-radius:5px;
+	text-decoration: none;
+	color:white;
+	transition: all ease 0.5s;
+}
+.delete-button:hover{
+	text-decoration: none;
+	background-color: red;
+	color:white;
+}
+.new-button{
+	background-color: coral;
+	padding:7px;
+	border:none;
+	border-radius:5px;
+	text-decoration: none;
+	color:white;
+	transition: all ease 0.5s;
+}
+.new-button:hover{
+	text-decoration: none;
+	background-color: #329dd5;
+	color:white;
+}
 /*main part css*/
 .mainpart{
 /*	border : solid black;*/
@@ -128,17 +156,22 @@ header .navbar {
 
 .title{
 	font-family: 'Patrick Hand', cursive;
+	color:coral;
 }
-
+.comment-wrapper{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
 .content{
 	font-family: 'Patrick Hand', cursive;
 }
 
 .post{
 	padding: 1%;
-	border: solid;
-	border-color: grey;
-	box-shadow: 7px 7px 2px 1px rgba(0, 0, 255, .2);
+	border: none;
+	border-radius: 5px;
 }
 /*
 .post{

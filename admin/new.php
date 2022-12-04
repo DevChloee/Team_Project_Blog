@@ -24,7 +24,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
     <title>My Blog Admin</title>
 
   </head>
-  <body class="newpage_body">
+  <body class="newpage_body bg-dark">
 
     <!-- Header -->
       <header class="headertop">
@@ -38,7 +38,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
             <ul class="navbar-nav ml-auto">
 
               <li class="nav-item active">
-                <a class="nav-link" href="">Home
+                <a class="nav-link" href="index.php">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -89,7 +89,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
             <textarea class="form-control" rows="3" name="content"></textarea>
         </div>
         <div class="form-group">
-          <input type="submit" class="btn btn-primary" name="submit" value="Publish">
+          <input type="submit" class="new-button" name="submit" value="Publish">
         </div>
       </form>
 

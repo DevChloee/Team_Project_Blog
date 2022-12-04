@@ -21,7 +21,7 @@ include("db.php");
 
         <title>My Beautiful Blog</title>
     </head>
-  <body id="page-container ">
+  <body id="page-container" class="bg-dark">
 
      <!-- Header -->
       <header class="headertop">
@@ -75,7 +75,7 @@ include("db.php");
                   if(mysqli_num_rows($result)>0){
                     while($row = mysqli_fetch_assoc($result)){
                       echo "<br>";
-                      echo "<div class='post'>";
+                      echo "<div class='post bg-light'>";
                       echo "<h4 class='title'>".$row["title"]."</h4><hr>
                             <p class='content'>".$row["content"]."</p>";
                       echo "</div>";
@@ -91,7 +91,7 @@ include("db.php");
                   if(mysqli_num_rows($result)>0){
                     while($row = mysqli_fetch_assoc($result)){
                       echo "<br>";
-                      echo "<div class='posttitle'>";
+                      echo "<div class='posttitle bg-light'>";
                       echo "<h4 class='title'>".$row["title"]."</h4><hr>";
                       echo "</div>";
                     }

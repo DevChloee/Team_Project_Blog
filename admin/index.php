@@ -19,7 +19,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 
     <title>My Blog Admin</title>
   </head>
-  <body>
+  <body class="bg-dark">
 
     <!-- Header -->
       <header class="headertop">
@@ -33,7 +33,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
             <ul class="navbar-nav ml-auto">
 
               <li class="nav-item active">
-                <a class="nav-link" href="">Home
+                <a class="nav-link" href="index.php">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -82,7 +82,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
                   if(mysqli_num_rows($result)>0){
                     while($row = mysqli_fetch_assoc($result)){
                       echo "<br>";
-                      echo "<div class='post'>";
+                      echo "<div class='post bg-light'>";
                       echo "<h4 class='title'>".$row["title"]."</h4><hr>
                             <p class='content'>".$row["content"]."</p>";
                       echo "</div>";
@@ -98,7 +98,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
                   if(mysqli_num_rows($result)>0){
                     while($row = mysqli_fetch_assoc($result)){
                       echo "<br>";
-                      echo "<div class='posttitle'>";
+                      echo "<div class='posttitle bg-light'>";
                       echo "<h4 class='title'>".$row["title"]."</h4><hr>";
                       echo "</div>";
                     }

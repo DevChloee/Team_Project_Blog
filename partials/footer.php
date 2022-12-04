@@ -19,15 +19,11 @@
 	        
 	    		</div>
 	    </div>
-	    </div>
 	    
-				<div class="copyright">Copyright 
+				<div class="copy-right">Copyright 
 					<span style="color:#f48840">2022 COPYRIGHT@</span>
 					 - MyBlog 
 				</div>
-		</div>
-		</div>
-	</div>
 </footer>
 </body>
  </html>
