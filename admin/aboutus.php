@@ -80,7 +80,7 @@
       </header>
 <div class="container">
     <div id="search-position" >
-      <h1>List of Developpers</h1>
+      <h1>List of Developers</h1>
       <input type="text" id="search" onkeyup="searchUser()" 
       placeholder="Search for specific post..">
 
