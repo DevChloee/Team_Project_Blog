@@ -1,0 +1,46 @@
+.footer{
+	bottom: 0px;
+	width: 100%;
+	color: white;
+	background-color: rgb(32, 35, 46);
+	margin-top: 75px;
+}
+.footer_titles{
+    /*isplay: flex;
+    justify-content: space-between;*/
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    top: 20px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+hr.cuteline {
+    height: 5px;
+    border-top: 3px double white;
+}
+
+.footerinfo {
+    /*display: flex;
+    justify-content: space-between;*/
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    line-height: 3;
+}
+
+.emailsfooter {
+    margin-left: 150px;
+    display: grid;
+    margin-bottom: 47px;
+}
+
+a.peepemail {
+    color: white;
+}
+
+
+a.peepemail:hover{
+	color:#f48840;
+}

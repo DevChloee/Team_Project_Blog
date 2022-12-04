@@ -1,0 +1,60 @@
+.admin-login{
+	width:200px;
+	text-align: center;
+	margin: auto;
+}
+
+.mynav{
+	background-color: #013954;
+}
+
+
+.title{
+	font-family: 'Patrick Hand', cursive;
+}
+
+.content{
+	font-family: 'Patrick Hand', cursive;
+}
+
+/*.post{
+	-webkit-box-shadow: 6px 8px 15px 4px rgba(230, 200, 92, 0.75);
+	-moz-box-shadow:    6px 8px 15px 4px rgba(230, 200, 92, 0.75);
+	box-shadow:         6px 8px 15px 4px rgba(230, 200, 92, 0.75);
+	padding:10px;
+}
+*/
+.navbar-collapse{
+/*  border: solid white;*/
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2% 0 1%;
+
+}
+.logout{
+/*  display: block;*/
+/*  border: solid white;*/
+  color: white;
+}
+
+@media all and (max-width: 992px){
+	.navbar-collapse{display:block;}
+}
+
+.new_wrap{
+/*	border: solid black;*/
+	margin-top: 6%;
+	padding: 3% 3% 5% 3%;
+}
+
+.newpage_body{
+	background-color: #9f9da7;
+}
+
+#new-form-wrap{
+	 background-color: #fff;
+}
+
+.newpost_title{
+	margin-bottom: 3%;
+}

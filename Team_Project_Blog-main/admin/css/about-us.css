@@ -1,0 +1,114 @@
+#earth {
+  padding-top: 6px;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  box-shadow: 0 10px 10px 0 rgba(148, 202, 238, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title {
+  text-align: center;
+}
+
+blockquote {
+  padding: 4px;
+  background-color: #d9d7e2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+  font-size: 14pt;
+}
+
+#algonquin {
+  padding-top: 6px;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#search-position {
+  padding-top: 10px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+#search-position h1 {
+  text-align: center;
+}
+
+
+ #search-position #search {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#search-position #UL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#search-position #UL li a {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 4px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#search-position #UL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+/* flex container for cards */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container>div {
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: rgb(108, 167, 206);
+  width: 454px;
+  height: 270px;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  margin-right: 4px;
+  border-radius: 8px;
+}
+
+.flex-container>div>h1 {
+  text-align: center;
+}
+
+
+.flex-container>div>p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14pt;
+  margin: 2px;
+}
+
+.flex-container :hover {
+  background-color: rgb(204, 240, 245);
+  transition: 1.0s;
+}
