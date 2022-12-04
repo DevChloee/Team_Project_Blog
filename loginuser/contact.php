@@ -13,6 +13,7 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Comment System Using BS4, PHP & MySQLI</title>
 	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="stylesheet" type="text/css" href="../partials/footer.css">
 
 	<script src="https://kit.fontawesome.com/607a06b07a.js" crossorigin="anonymous"></script>
 	<!-- Latest compiled and minified CSS -->
@@ -134,8 +135,10 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+<?php 
+  include '../partials/footer.php';
+?>
+
 <?php
  	}else{
   header("Location: contact.php");

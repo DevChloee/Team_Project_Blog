@@ -16,6 +16,7 @@
 
      <link rel="stylesheet" type="text/css" href="NewAndPost.css">
      <link rel="stylesheet" type="text/css" href="../index.css">
+     <link rel="stylesheet" type="text/css" href="../partials/footer.css">
 
     <title>My Blog Admin</title>
   </head>
@@ -43,7 +44,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">Delete</a>
+                <a class="nav-link" href="deletion.php">Delete</a>
               </li>
 
               <li class="nav-item">
@@ -51,7 +52,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="contact.php">Contact Us</a>
               </li>
 
               <li class="nav-item">
@@ -93,11 +94,9 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+   <?php 
+    include '../partials/footer.php';
+    ?>
 <?php
   if(isset($_GET["delete"])){
     $delete = $_GET["delete"];

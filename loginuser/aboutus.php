@@ -7,29 +7,30 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!--Google font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../index.css">
-  <link rel="stylesheet" type="text/css" href="../admin/css/about-us.css">
-  <script src="../js/search.js" defer></script>
+        <!--Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../index.css">
+        <link rel="stylesheet" type="text/css" href="../admin/css/about-us.css">
+         <link rel="stylesheet" type="text/css" href="../partials/footer.css">
+      <script src="../js/search.js" defer></script>
 
-  <title>About Us</title>
-</head>
+      <title>About Us</title>
+    </head>
 
-<body>
+  <body>
 
-  <!-- Header -->
+   <!-- Header -->
       <header class="headertop">
         <nav class="navbar navbar-expand-lg">
 
@@ -130,9 +131,11 @@ if(isset($_SESSION["user"]) && $_SESSION["user"]="guest"){
           </div>
         </div>
 
-      </body>
+    
+<?php 
+  include '../partials/footer.php';
 
-      </html>
+?>
   
 <?php
   if(isset($_GET["delete"])){

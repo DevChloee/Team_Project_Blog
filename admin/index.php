@@ -15,6 +15,7 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
 
      <link rel="stylesheet" type="text/css" href="NewAndPost.css">
      <link rel="stylesheet" type="text/css" href="../index.css">
+     <link rel="stylesheet" type="text/css" href="../partials/footer.css">
 
     <title>My Blog Admin</title>
   </head>
@@ -107,9 +108,9 @@ if(isset($_SESSION["admin"]) && $_SESSION["admin"]="chloe"){
               </div>
         </div>
       </div>
-
-  </body>
-</html>
+  <?php 
+    include '../partials/footer.php';
+  ?>
 <?php
   if(isset($_GET["delete"])){
     $delete = $_GET["delete"];
